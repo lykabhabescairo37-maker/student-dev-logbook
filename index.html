@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Termo | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="landing-page" id="landingPage">
+    <div class="landing-card">
+        <h1>Welcome to Kevin Termo's Portfolio</h1>
+        <p>Explore ITE-6 activities and projects through a fresh blue landing experience.</p>
+        <button class="enter-btn" id="enterBtn">Enter Site</button>
+    </div>
+</div>
+
+<header>
+    <h1>ITE-6 PORTFOLIO</h1>
+</header>
+
+<button id="toggleBtn" class="toggle-btn">☰ Menu</button>
+
+<div class="container">
+    <div class="content">
+        <div id="mainBox" class="box">
+            <h2 id="mainTitle">Welcome</h2>
+            <div id="mainDisplay">
+                <p>Select an option from the menu to interact with the activities.</p>
+                <button class="vintage-btn" style="width: auto; margin-top: 20px;" onclick="renderHome()">Reset View</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="sidemenu" id="sidemenu">
+        <p class="menu-label">Navigation</p>
+        <button id="btnHome" class="menu-btn">Home</button>
+        <button id="btnAbout" class="menu-btn">About</button>
+        <button id="btnContact" class="menu-btn">Contact</button>
+        
+        <hr class="divider">
+        <p class="menu-label">Laboratory Tasks</p>
+        
+        <button id="btnMainExercises" class="menu-btn">View Exercises ▾</button>
+        
+        <div id="exerciseSubmenu" style="display: none; padding-left: 10px; border-left: 2px solid #5d4037;">
+            <button id="showEx2" class="menu-btn" style="font-size: 0.9rem;">Exercise 2 ▾</button>
+            <div id="ex2List"></div>
+
+            <div class="divider" style="opacity: 0.3;"></div>
+
+            <button id="showEx3" class="menu-btn" style="font-size: 0.9rem;">Exercise 3 ▾</button>
+            <div id="ex3List"></div>
+
+            <div class="divider" style="opacity: 0.3;"></div>
+
+            <button id="showEx4" class="menu-btn" style="font-size: 0.9rem;">Exercise 4 ▾</button>
+            <div id="ex4List"></div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
